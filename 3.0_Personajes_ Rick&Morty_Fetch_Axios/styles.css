@@ -1,0 +1,100 @@
+body {
+  font-family: "Arial", sans-serif;
+  padding: 20px;
+  background-color: #030303;
+  color: #ccc;
+}
+
+img {
+  border-radius: 10%;
+}
+
+h2 {
+  color: #ff6f61;
+  text-align: center;
+}
+
+h3 {
+  margin: 0 0 8px 0;
+  color: #36e069;
+  font-size: 1rem;
+  text-align: center;
+}
+
+#fetch-btn,
+#axios-btn {
+  padding: 10px 20px;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  margin-right: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
+}
+
+#fetch-btn {
+  background-color: #702065;
+}
+
+#axios-btn {
+  background-color: #2c1e77;
+}
+
+#fetch-btn:hover {
+  background-color: #d675c0;
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(112, 32, 101, 0.2);
+}
+
+#axios-btn:hover {
+  background-color: #684fc9;
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(44, 30, 119, 0.2);
+}
+
+#data-container {
+  border: 1px solid #990b86;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  justify-content: center;
+}
+
+h1,
+.button-group {
+  text-align: center;
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.button-group {
+  margin-bottom: 20px;
+}
+
+.character {
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 10px;
+  width: 150px;
+  text-align: center;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.04);
+}
+
+img {
+  transition: transform 0.2s;
+  width: 12rem;
+  height: 12rem;
+  object-fit: cover;
+  margin-bottom: 16px;
+}
+
+img:hover {
+  transform: scale(1.2);
+}
+
+.h3-axios-active {
+  color: #ffe066 !important;
+}
