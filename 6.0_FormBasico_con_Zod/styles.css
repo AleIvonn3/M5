@@ -1,0 +1,119 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #000000;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  text-align: center;
+  color: #000000;
+  margin-bottom: 1.5rem;
+  display: block;
+  font-size: 2em;
+}
+
+form {
+  background: #fff;
+  padding: 5px 10px 20px 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  transition: border-color 0.3s;
+}
+
+button {
+  background-color: #28a745;
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0a581b;
+}
+
+.container {
+  background-color: #2e59e6;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  height: 100%;
+  max-width: 450px;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group-inline {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.form-group-inline label {
+  margin-left: 0.5rem;
+}
+
+#error {
+  color: red;
+  margin-top: 10px;
+}
+
+/* --- Clases para validación --- */
+.error-text,
+.error-text-inline {
+  color: #d93025;
+  font-size: 0.56rem;
+  display: block;
+  margin-top: 5px;
+  min-height: 1em; /* Evita que el layout salte al aparecer el mensaje */
+}
+
+.error-text-inline {
+  margin-left: 1rem;
+}
+
+input.error,
+select.error {
+  border-color: #d93025;
+}
+
+input.success,
+select.success {
+  border-color: #1e8e3e;
+}
+
+.success-message {
+  margin-top: 1rem;
+  padding: 10px;
+  background-color: #e6f4ea;
+  color: #1e8e3e;
+  border: 1px solid #1e8e3e;
+  border-radius: 4px;
+  text-align: center;
+  display: none; /* Oculto por defecto */
+}
